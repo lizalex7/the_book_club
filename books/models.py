@@ -8,7 +8,8 @@ class Book(models.Model):
   owner = models.ForeignKey(
     to='users.User',
     on_delete=models.CASCADE,
-    related_name='books_owned'
+    related_name='books_owned',
+    null=True
   )
 
   def __str__(self):
