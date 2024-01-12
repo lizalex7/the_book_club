@@ -1,0 +1,13 @@
+[
+{
+  "model": "books.book",
+  "pk": 1,
+  "fields": {
+    "title": "Test",
+    "author": "Test author",
+    "description": "Description",
+    "genre": "Test",
+    "owner": 1
+  }
+}
+]
