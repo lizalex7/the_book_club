@@ -1,25 +1,14 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+
+import { Outlet } from "react-router-dom"
+import Footer from "./components/Footer"
+// import Nav from './components/Nav'
 
 function App() {
-
-  const [ books, setBooks ] = useState([])
   
-  useEffect(() => {
-    async function getBookData(){
-      try {
-        const res = await axios.get('')
-        console.log(res)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    getBookData()
-  }, [])
-
   return (
     <>
-      <h1>Hello World</h1>
+      <Outlet />
+      <Footer />
     </>
   )
 }
