@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 // Styles
-// import './styles/main.scss'
+import './styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Page components
@@ -15,6 +15,7 @@ import Login from './components/Login.jsx'
 
 // Loaders
 import { getAllBooks } from './utilities/loaders/books.js'
+import { loginUser, registerUser } from './utilities/actions/auth.js'
 
 // Router
 
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: '/books/',
         element: <BookIndex />,
-        loader: getAllBooks
+        // loader: getAllBooks
       },
       {
         path: '/books/create',
@@ -39,10 +40,12 @@ const router = createBrowserRouter([
       {
         path: '/register/',
         element: <Register />,
+        action: async ({ request }) => registerUser(request),
       },
       {
         path: '/login/',
         element: <Login />,
+        action: async ({ request }) => loginUser(request),
       }
     ]
   }

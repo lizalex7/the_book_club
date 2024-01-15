@@ -1,4 +1,6 @@
-// @import '/global/base.scss';
+@import 'global/base.scss';
+@import 'global/variables.scss';
 // @import '/.global/forms.scss';
 
-// @import '/.components/footer.scss';
+@import 'components/footer.scss';
+@import 'components/Nav.scss';

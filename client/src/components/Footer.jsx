@@ -5,7 +5,7 @@
 
 export default function Footer(){
   return (
-    <footer>
+    <footer className="footer">
       <p>Liz Alexander - The Book Club</p>
     </footer>
   )
