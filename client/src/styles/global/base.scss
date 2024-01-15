@@ -1,6 +1,9 @@
 body {
   flex-grow: 1;
   margin: 0px;
+  font-family: "Arvo";
+  font-weight: 400;
+  font-style: normal;
 }
 
 #root {
@@ -14,12 +17,6 @@ main {
   flex-grow: 1;
   background-color: #E0DED5;
   color: #243CFC;
-}
-
-.arvo-regular {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .arvo-regular-italic {

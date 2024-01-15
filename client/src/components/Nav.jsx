@@ -38,7 +38,7 @@ export default function Nav() {
       <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
           <nav onClick={() => setShow(false)} className='link-container'>
-            <Link to="/books">Books</Link>
+            <Link to="/books">BOOKS</Link>
             {/* <Link to="/books">All Books</Link> */}
             { activeUser() ?
               <>                
@@ -46,8 +46,8 @@ export default function Nav() {
               </>
               :
               <>
-                <Link to="/login">Login</Link>
-                <Link to="/register">Register</Link>
+                <Link to="/login">LOGIN</Link>
+                <Link to="/register">REGISTER</Link>
               </>
             }
           </nav>
