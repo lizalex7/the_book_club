@@ -1,0 +1,64 @@
+.registeruser, .registeremail, .registerpass, .registerpasscon, input {
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  color: #243CFC;
+  width: 300px;
+}
+
+.danger{
+  color: red;
+  width: 50%;
+}
+
+// Register and login button formatting and behaviours
+.reg-login-btn {
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  background-color: #243CFC;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #D9FE00;
+  border: none;
+}
+
+.register, .login {
+  color: #243CFC;
+}
+
+.reg-login-btn:hover {
+  background-color: #D9FE00; /* Change color on hover */
+  color: #243CFC;
+}
+
+.reg-login-btn:active {
+  transform: translate(1px, 1px); /* Move button 2px down on click */
+}
+
+.reg-login-link:hover {
+  background-color: #D9FE00; /* Change color on hover */
+  color: #243CFC;
+}
+
+p {
+  a, span {
+    text-decoration: none;
+    color: #D9FE00;
+    font-weight: bold;
+  }
+}
+
+.registerform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

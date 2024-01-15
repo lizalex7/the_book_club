@@ -2,6 +2,8 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding-left: 2em;
+  padding-top: 1em;
   span {
     height: 4px;
     display: block;
@@ -11,32 +13,31 @@
   }
 }
 
-// .modal-header {
-//   flex-grow: 1;
-//   background: #FF7C5E;
-//   color: #FEE8B0;
-//   button {
-//     position: absolute;
-//     top: 2rem;
-//     right: 2rem;
-//     color: #FEE8B0;
-//   }
-//   nav {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: left;
-//     justify-content: left;
-//     a, span, .logout {
-//       color: #FEE8B0;
-//       text-decoration: none;
-//       cursor: pointer;
-//       font-size: 3em;
-//     }
-//   }
-// }
+.modal-header {
+  flex-grow: 1;
+  background: #D9FE00;
+  color: #243CFC;
+  button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #243CFC;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    a, span, .logout {
+      color: #243CFC;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 3em;
+    }
+  }
+}
 
 .navbar{
-  // @include flex(row-reverse, center, space-between);
   padding: 1.5em;
   background-color: #E0DED5;
 }
