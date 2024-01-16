@@ -1,0 +1,101 @@
+[
+{
+  "model": "books.book",
+  "pk": 2,
+  "fields": {
+    "title": "The Impossible Collection of Fashion",
+    "author": "Valerie Steele",
+    "description": "In this limited edition, Ultimate Collection format linen clamshell and handmade oversized book, Valerie Steele flexes her curatorial muscle by showcasing the most iconic dresses of the twentieth century. From Poiret to Pucci, Doucet to Dior, Vionnet to Valentino, Steele selects one hundred dresses that caused a stir either on the runway or entering a room and ultimately inspired new directions in fashion. Steele’s selections include Paul Poiret's figure-liberating 1907 gown, Madame Grès’s sublimely draped goddess creation from 1938, Jean Paul Gaultier's shockingly exaggerated cone-bust corset",
+    "genre": "Fashion",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 3,
+  "fields": {
+    "title": "Travel by Design",
+    "author": "The Design Leadership Network",
+    "description": "Showcasing travel photographs by more than 150 of America’s top architects and designers, Travel by Design is an inspiring guide to the power of travel to shape and expand our world. Travel by Design reminds us of the beauty and importance of travel, with images of more than 100 locations in 60 countries, from exotic destinations and global cities to adventure travels and all-American escapes. More than 350 photographs take readers on a global journey through cityscapes, ancient civilizations, luxurious resorts, and stunning natural wonders, all seen through the discerning and artistic eyes of",
+    "genre": "Travel",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 4,
+  "fields": {
+    "title": "Mexico City",
+    "author": "Aleph Molinari",
+    "description": "With a history dating back to the fourteenth century, Mexico City blends indigenous pre-Hispanic roots with colonial architecture and Spanish-baroque influences. This unique fusion, crafted from local materials like cantera and tezontle, inspires artists and architects alike. Iconic structures like Diego Rivera's Anahuacalli Museum and Juan O'Gorman's Cave House proudly embody the city's rich history. Today, Mexico City serves as a vibrant backdrop for renowned filmmakers such as Alejandro González Iñárritu, Alfonso Cuarón, and Michel Franco. Discover a city of wonders, where history and creat",
+    "genre": "Travel",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 5,
+  "fields": {
+    "title": "Miami Beach",
+    "author": "Horacio Silva",
+    "description": "Considered by many as the country’s most dynamic, fastest growing and sexiest city, Miami is more popular than ever before. Yet, it is a city that doesn’t merely change but evolves, never rewriting the past, just adding to its illustrious heritage. And this is the real beauty of Miami. The chic Surf Club and the vibrant Faena Hotel did not replace the emblematic Raleigh of the 1940s nor the Ritz Carlton of the 50s, rather they complement them. Classics like Joe’s Stone Crab continue to serve their signature fare to sell-out crowds each night, as new establishments attract with name chefs. The",
+    "genre": "Travel",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 6,
+  "fields": {
+    "title": "Jamaica Vibes",
+    "author": "Lisa Lovatt-Smith",
+    "description": "Surely the most stylish and cool island in the Caribbean, Jamaica is not only the cradle of reggae but also a favorite destination for James Bond. While there is no shortage of luxury villas and white-sand beaches, Jamaica offers something that other destinations lack: a vibrant culture, wholly its own. Overflowing with character, Jamaica has a strong sense of self, which was shaped over the centuries during its fight for freedom and independence.",
+    "genre": "Travel",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 7,
+  "fields": {
+    "title": "Codognato Masterpiece",
+    "author": "William Middleton",
+    "description": "In the enchanting city of Venice, Casa Codognato, established by Simeone Codognato in 1866, near Piazza San Marco, became renowned for its memento mori designs, while Attilio Codognato introduced ancient intaglios and cameos during a time of significant Etruscan archaeological discoveries. Codognato emerged as one of Europe's most unique jewelers, attracting luminaries like Gabrielle Chanel, Jean Cocteau, and Diana Vreeland. Their jewels became a sensation during Venice's glamorous society ball era, adorning icons like Elizabeth Taylor, Maria Callas, Jacqueline Kennedy, and Lee Radziwill. Atti",
+    "genre": "Art",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 8,
+  "fields": {
+    "title": "Sushi Shokunin: Japan's Culinary Masters",
+    "author": "Andrea Fazzari",
+    "description": "In Japan, cooking often bears aesthetic value, and the making of sushi is exalted as one of the finest culinary crafts. In line with this ideal of food as art, the Japanese often employ the word shokunin, loosely defined as “artisan”, to refer to highly skilled sushi masters. Connoting excellence and devotion to one’s craft, this title is reserved for those who approach their work with an artistic eye and seemingly spiritual sense of purpose, or ikigai.",
+    "genre": "Japanese Cuisine",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 9,
+  "fields": {
+    "title": "Louis Vuitton: Virgil Abloh",
+    "author": "Anders Christian Madsen",
+    "description": "When Virgil Abloh took his first bow for Louis Vuitton in June 2018, fashion changed forever. The newest addition to the Classics Collection, Louis Vuitton: Virgil Abloh honors the designer’s boundary-breaking creativity on and off the runways. With over 250 stunningly iconic images and personal reflections from Abloh’s inner circle, including Nigo, Naomi Campbell, Luka Sabbat, Kendall Jenner and Kid Cudi, the book is the definitive chronicle of a partnership that redefined not only dress codes but their very vocabulary.",
+    "genre": "Fashion",
+    "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 10,
+  "fields": {
+    "title": "Pop Art Style",
+    "author": "Julie Belcove",
+    "description": "In the 1950s, a young man from Pittsburgh named Andy Warhol was earning a comfortable living as a commercial illustrator in New York City. But his ambitions went well beyond that; soon he was painting Coca-Cola bottles and filling a gallery with paintings of Campbell’s Soup cans. He certainly wasn’t the first to make a Pop work, but Warhol soon became a brand name himself, synonymous with the new art form that embodied everything youthful, subversive, bright and fresh.",
+    "genre": "Art",
+    "owner": 1
+  }
+}
+]

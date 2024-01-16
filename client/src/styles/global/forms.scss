@@ -4,7 +4,11 @@
   border: none;
   color: #243CFC;
   width: 300px;
-  font-family: 'arvo';
+  font-family: 'avro';
+}
+
+.input {
+  font-family: 'avro';
 }
 
 .danger{
@@ -15,7 +19,6 @@
 // Register and login button formatting and behaviours
 .reg-login-btn {
   font-size: 20px;
-  height: 50px;
   width: 150px;
   background-color: #243CFC;
   border-radius: 5px;
@@ -23,6 +26,7 @@
   color: #D9FE00;
   border: none;
   font-family: 'arvo';
+  margin-top: 1em;
 }
 
 .register, .login {
@@ -56,11 +60,33 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: solid;
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 500px;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid 5px;
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 30em;
+  height: 20em;
+}
+
+p {
+  font-family: 'avro';
+}
+
+.form-container {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+  padding-right: 3em;
 }

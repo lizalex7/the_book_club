@@ -5,7 +5,7 @@ import { Form, useActionData, useNavigate, Link } from "react-router-dom";
 export default function Register() {
 
   const res = useActionData()
-  console.log(res)
+  console.log("return res", res)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -17,16 +17,17 @@ export default function Register() {
 
   return (
     <>
-
-      <Form method="post" className="registerform" >
-        <input className="registeruser" type="text" name="username" placeholder='Username' /><br />
-        <input className="registeremail" type="email" name="email" placeholder='Email address' /><br />
-        <input className="registerpass" type="password" name="password" placeholder='Password' /><br />
-        <input className="registerpasscon" type="password" name="passwordConfirmation" placeholder='Confirm password' /><br /><br />
-        <button className="reg-login-btn" type="submit">Register</button><br /><br />
-        <p className="register">Already have an account?{'\u00a0'} <Link to="/login"><span className='reg-login-link'> Login</span></Link></p>
-        {res && <p className="danger">{res.data.message}</p>}
-      </Form>
+      <div className="form-container">
+        <Form method="post" className="registerform" >
+          <input className="registeruser" type="text" name="username" placeholder='Username' /><br />
+          <input className="registeremail" type="email" name="email" placeholder='Email address' /><br />
+          <input className="registerpass" type="password" name="password" placeholder='Password' /><br />
+          <input className="registerpasscon" type="password" name="password_confirmation" placeholder='Confirm password' /><br /><br />
+          <button className="reg-login-btn" type="submit">Register</button><br /><br />
+          <p className="register">Already have an account?{'\u00a0'} <Link to="/login"><span className='reg-login-link'> Login</span></Link></p>
+          {res && <p className="danger">{res.data.message}</p>}
+        </Form>
+      </div>
     </>
   );
 }

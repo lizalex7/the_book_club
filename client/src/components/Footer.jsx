@@ -1,12 +1,11 @@
-// import { Link } from 'react-router-dom'
-
-// Bootstrap components
-// import Container from 'react-bootstrap/Container'
+import { Link } from 'react-router-dom'
 
 export default function Footer(){
   return (
     <footer className="footer">
-      <p>Liz Alexander - The Book Club</p>
+      <Link to={'https://github.com/lizalex7'}> 
+        <p>Liz Alexander | General Assembly | SEI 2023/24</p>
+      </Link>
     </footer>
   )
 }

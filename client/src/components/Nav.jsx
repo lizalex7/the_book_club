@@ -27,7 +27,6 @@ export default function Nav() {
   return (
     <>
       <header className='navbar'>
-        {/* <Link to="/"><img className='logo-icon' src={logoIcon} alt="tasty palette logo" /></Link> */}
         <button className='nav-toggle' onClick={() => setShow(true)}>
           <span></span>
           <span></span>
@@ -39,7 +38,6 @@ export default function Nav() {
         <Modal.Header closeButton>
           <nav onClick={() => setShow(false)} className='link-container'>
             <Link to="/books">BOOKS</Link>
-            {/* <Link to="/books">All Books</Link> */}
             { activeUser() ?
               <>                
                 <span className='logout' onClick={handleLogOut}>Log out</span>

@@ -1,4 +1,4 @@
-const tokenName = 'BOOK_CLUB_TOKEN'
+const tokenName = 'BOOK_TOKEN'
 
 // # # This function takes a request object and returns form data as a JS object
 export async function formToObj(request){
@@ -30,9 +30,9 @@ export function activeUser(){
   const now = Date.now() / 1000
   const exp = payload.exp
   if (exp > now) {
-    console.log(payload.sub)
-    return payload.sub
+    console.log(payload)
+    return payload
 }
 
-// Validate expiry date (payload.exp) by checking the number is greater than the date right now 
+// Validate expiry date (payload.exp) by checking the number is greater than the date right now
 }

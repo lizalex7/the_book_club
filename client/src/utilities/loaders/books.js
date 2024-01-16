@@ -3,3 +3,8 @@ export async function getAllBooks(){
   console.log(res)
   return res.json()
 }
+
+export async function getSingleBook(id){
+  const res = await fetch(`/api/books/book${id}`)
+  return res.json()
+}

@@ -12,10 +12,13 @@ import BookIndex from './components/BookIndex.jsx'
 import BookCreate from './components/BookCreate.jsx'
 import Register from './components/Register.jsx'
 import Login from './components/Login.jsx'
+import SingleBook from './components/SingleBook.jsx'
 
-// Loaders
-import { getAllBooks } from './utilities/loaders/books.js'
+// Loaders and actions
+// import { getAllBooks } from './utilities/loaders/books.js'
 import { loginUser, registerUser } from './utilities/actions/auth.js'
+import { getSingleBook } from './utilities/loaders/books.js'
+import { deleteBook } from './utilities/actions/books.js'
 
 // Router
 
@@ -32,6 +35,12 @@ const router = createBrowserRouter([
         path: '/books/',
         element: <BookIndex />,
         // loader: getAllBooks
+      },
+      {
+        path: '/books/:bookId',
+        element: <SingleBook />,
+        loader: async ({ params }) => getSingleBook(params.bookId),
+        action: async ({ params }) => deleteBook(params.bookId)
       },
       {
         path: '/books/create',

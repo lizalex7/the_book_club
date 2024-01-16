@@ -4,10 +4,10 @@ import bgimage from '../images/png/bg-logo-color.png'
 export default function Home() {
   
   return (
-    <Link to='/books/'>
-      <div className='image-container'>
+    <div className='image-container'>  
+      <Link to='/books/'>
         <img src={bgimage} alt="The Book Club Logo" />
-      </div>
-    </Link>
+      </Link>
+    </div>
   )
 }
