@@ -14,11 +14,12 @@ import Register from './components/Register.jsx'
 import Login from './components/Login.jsx'
 import SingleBook from './components/SingleBook.jsx'
 
-// Loaders and actions
-// import { getAllBooks } from './utilities/loaders/books.js'
+// Loaders 
+import { getAllBooks, getSingleBook } from './utilities/loaders/books.js'
+
+// Actions
 import { loginUser, registerUser } from './utilities/actions/auth.js'
-import { getSingleBook } from './utilities/loaders/books.js'
-import { deleteBook } from './utilities/actions/books.js'
+import { createBook } from './utilities/actions/books.js'
 
 // Router
 
@@ -34,17 +35,18 @@ const router = createBrowserRouter([
       {
         path: '/books/',
         element: <BookIndex />,
-        // loader: getAllBooks
+        loader: getAllBooks
       },
       {
         path: '/books/:bookId',
         element: <SingleBook />,
         loader: async ({ params }) => getSingleBook(params.bookId),
-        action: async ({ params }) => deleteBook(params.bookId)
+        // action: async ({ params }) => deleteBook(params.bookId)
       },
       {
         path: '/books/create',
         element: <BookCreate />,
+        action: async ({ request }) => createBook(request),
       },
       {
         path: '/register/',
@@ -61,5 +63,5 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router ={router} />
+  <RouterProvider router={router} />
 )

@@ -2,7 +2,7 @@ from rest_framework.generics import RetrieveUpdateDestroyAPIView
 from .models import Book
 from .serializers.common import BookSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from .serializers.populated import BookListSerializer, PopulatedBookSerializer
+from .serializers.populated import BookListSerializer
 from lib.views import OwnerListCreateView
 from lib.permissions import IsOwnerOrReadOnly
 
@@ -32,7 +32,7 @@ class BookDetailView(RetrieveUpdateDestroyAPIView):
       return BookSerializer
     
 
-  def get_serializer_class(self):
-    if self.request.method == 'PUT':
-      return BookSerializer
-    return PopulatedBookSerializer
+  # def get_serializer_class(self):
+  #   if self.request.method == 'PUT':
+  #     return BookSerializer
+  #   return PopulatedBookSerializer

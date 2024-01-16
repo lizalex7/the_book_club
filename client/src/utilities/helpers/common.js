@@ -1,4 +1,4 @@
-const tokenName = 'BOOK_TOKEN'
+const tokenName = 'BOOK_TOKEN_SEI'
 
 // # # This function takes a request object and returns form data as a JS object
 export async function formToObj(request){

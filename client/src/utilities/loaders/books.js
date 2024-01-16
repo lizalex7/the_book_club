@@ -1,10 +1,11 @@
+import axios from "axios"
+
 export async function getAllBooks(){
-  const res = await fetch('/api/books/')
-  console.log(res)
-  return res.json()
+  const res = await axios.get('/api/books/')
+  return res.data
 }
 
 export async function getSingleBook(id){
-  const res = await fetch(`/api/books/book${id}`)
-  return res.json()
+  const res = await axios.get(`/api/books/${id}`)
+  return res.data
 }

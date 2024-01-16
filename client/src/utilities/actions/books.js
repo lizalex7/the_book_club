@@ -4,7 +4,7 @@ import { redirect } from 'react-router-dom'
 
 export async function createBook(request){
   const data = await formToObj(request)
-  return await axios.post('/api/books', data, {
+  return await axios.post('/api/books/', data, {
     validateStatus: () => true,
     headers: {
       Authorization: `Bearer ${getToken()}`
@@ -29,5 +29,5 @@ export async function deleteBook(id){
       Authorization: `Bearer ${getToken()}`
     }
   })
-  return redirect('/books')
+  return redirect('/books/')
 }

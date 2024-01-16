@@ -5,3 +5,19 @@
   font-family: 'arvo';
   font-size: 4em;
 }
+
+.book-list {
+  a {
+    height: 33.33vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    text-decoration: none;
+    color: blue;
+    transition: background-size 0.2s;
+    font-family: 'arvo';
+    font-size: 20px;
+    padding-top: 50px;
+    text-align: center;
+  }
+}

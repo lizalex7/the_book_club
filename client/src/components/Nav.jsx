@@ -37,10 +37,11 @@ export default function Nav() {
       <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
           <nav onClick={() => setShow(false)} className='link-container'>
-            <Link to="/books">BOOKS</Link>
+            <Link to="/books/">BOOKS</Link>
             { activeUser() ?
               <>                
-                <span className='logout' onClick={handleLogOut}>Log out</span>
+                <Link to='/books/create/'>CREATE</Link>
+                <span className='logout' onClick={handleLogOut}>LOG OUT</span>
               </>
               :
               <>
