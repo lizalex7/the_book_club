@@ -13,6 +13,7 @@ import BookCreate from './components/BookCreate.jsx'
 import Register from './components/Register.jsx'
 import Login from './components/Login.jsx'
 import SingleBook from './components/SingleBook.jsx'
+import ErrorPage from './components/ErrorPage.jsx'
 
 // Loaders 
 import { getAllBooks, getSingleBook } from './utilities/loaders/books.js'
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',

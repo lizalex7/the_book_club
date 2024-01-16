@@ -1,14 +1,10 @@
-.registeruser, .registeremail, .registerpass, .registerpasscon, input {
-  background-color: white;
-  border-radius: 5px;
+input {
+  background-color: #E0DED5;
+  border-radius: 3px;
   border: none;
   color: #243CFC;
   width: 300px;
-  font-family: 'avro';
-}
-
-.input {
-  font-family: 'avro';
+  font-family: 'Arvo';
 }
 
 .danger{
@@ -20,17 +16,18 @@
 .reg-login-btn {
   font-size: 20px;
   width: 150px;
-  background-color: #243CFC;
+  background-color: #E0DED5;
   border-radius: 5px;
   font-size: 1em;
-  color: #D9FE00;
+  color: #243CFC;
   border: none;
-  font-family: 'arvo';
+  font-family: 'Arvo';
   margin-top: 1em;
+  font-weight: bold;
 }
 
 .register, .login {
-  color: #243CFC;
+  color: #E0DED5
 }
 
 .reg-login-btn:hover {
@@ -50,7 +47,7 @@
 p {
   a, span {
     text-decoration: none;
-    color: #D9FE00;
+    color: #E0DED5;
     font-weight: bold;
   }
 }
@@ -61,10 +58,10 @@ p {
   align-items: center;
   justify-content: center;
   border: solid;
-  border-radius: 5px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
   width: 500px;
+  background-color: #243CFC;
 }
 
 .login-form {
@@ -72,7 +69,7 @@ p {
   flex-direction: column;
   align-items: center;
   border: solid 5px;
-  border-radius: 5px;
+  border-radius: 3px;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 30em;
@@ -80,13 +77,18 @@ p {
 }
 
 p {
-  font-family: 'avro';
+  font-family: 'Arvo';
 }
 
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5em;
-  padding-right: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #243CFC;
+}
+
+.reg-login-link {
+  color: #D9FE00;
 }

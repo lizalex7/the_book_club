@@ -1,0 +1,38 @@
+.single-book-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-title {
+    font-family: 'Arvo';
+    color: red;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    
+    mark {
+      background-color: #D9FE00;
+      color: #243CFC;
+    }
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+
+  span {
+    font-weight: bold;
+    color: #243CFC;
+  }
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #243CFC;
+  font-weight: bold;
+}
