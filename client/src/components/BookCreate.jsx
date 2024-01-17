@@ -27,7 +27,7 @@ export default function BookCreate(){
         <label hidden htmlFor="genre">Genre</label>
         <input type="text" name="genre" placeholder='Genre' />
         {res?.statusText && <p className='danger bold mt-4'>{res.statusText}</p>}
-        <button type="submit">Create</button>
+        <button type="submit">ADD TO LIBRARY</button>
       </Form>
     </>
   )

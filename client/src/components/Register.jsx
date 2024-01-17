@@ -19,6 +19,7 @@ export default function Register() {
     <>
       <h1 className="library">JOIN THE CLUB</h1>
       <div className="form-container">
+      <p><mark>Join the Club to share and review your favourite books</mark></p>
         <Form method="post" className="registerform" >
           <input className="registeruser" type="text" name="username" placeholder='Username' /><br />
           <input className="registeremail" type="email" name="email" placeholder='Email address' /><br />

@@ -40,7 +40,7 @@ export default function Nav() {
             <Link to="/books/">THE LIBRARY</Link>
             { activeUser() ?
               <>                
-                <Link to='/books/create/'>CREATE</Link>
+                <Link to='/books/create/'>ADD A BOOK</Link>
                 <span className='logout' onClick={handleLogOut}>LOG OUT</span>
               </>
               :
