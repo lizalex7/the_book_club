@@ -32,7 +32,7 @@ class BookDetailView(RetrieveUpdateDestroyAPIView):
       return BookSerializer
     
 
-  # def get_serializer_class(self):
-  #   if self.request.method == 'PUT':
-  #     return BookSerializer
-  #   return PopulatedBookSerializer
+  def get_serializer_class(self):
+    if self.request.method == 'PUT':
+      return BookSerializer
+    return BookListSerializer

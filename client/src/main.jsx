@@ -14,13 +14,14 @@ import Register from './components/Register.jsx'
 import Login from './components/Login.jsx'
 import SingleBook from './components/SingleBook.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
+import BookEdit from './components/BookEdit.jsx'
 
 // Loaders 
 import { getAllBooks, getSingleBook } from './utilities/loaders/books.js'
 
 // Actions
 import { loginUser, registerUser } from './utilities/actions/auth.js'
-import { createBook } from './utilities/actions/books.js'
+import { createBook, editBook, deleteBook } from './utilities/actions/books.js'
 
 // Router
 
@@ -40,15 +41,21 @@ const router = createBrowserRouter([
         loader: getAllBooks
       },
       {
-        path: '/books/:bookId',
+        path: '/books/:bookId/',
         element: <SingleBook />,
         loader: async ({ params }) => getSingleBook(params.bookId),
-        // action: async ({ params }) => deleteBook(params.bookId)
+        action: async ({ params }) => deleteBook(params.bookId)
       },
       {
-        path: '/books/create',
+        path: '/books/create/',
         element: <BookCreate />,
         action: async ({ request }) => createBook(request),
+      },
+      {
+        path: '/books/:bookId/edit/',
+        element: <BookEdit />,
+        action: async ({ request, params }) => editBook(request, params.bookId),
+        loader: async ({ params }) => getSingleBook(params.bookId)
       },
       {
         path: '/register/',

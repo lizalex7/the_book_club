@@ -31,4 +31,4 @@ class RegistrationSerializer(serializers.ModelSerializer):
 class BookListUserSerializer(serializers.ModelSerializer):
   class Meta:
     model = User
-    fields = ['username']
+    fields = ['username', 'id']

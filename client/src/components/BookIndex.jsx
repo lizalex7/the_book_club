@@ -14,13 +14,14 @@ export default function BookIndex() {
       <Container fluid>
         <Row className="book-list">
           { book.map(book => {
-            const { id, title } = book
+            const { id, title, owner: { username}  } = book
+            console.log(username)
             return (
               <Col 
                 as={Link}
                 key={id} 
                 xs={6} 
-                md={4} 
+                md={3} 
                 lg={3}
                 to={`/books/${id}`}
               >

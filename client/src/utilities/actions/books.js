@@ -14,7 +14,7 @@ export async function createBook(request){
 
 export async function editBook(request, id){
   const data = await formToObj(request)
-  return await axios.put(`/api/books/${id}`, data, {
+  return await axios.put(`/api/books/${id}/`, data, {
     validateStatus: () => true,
     headers: {
       Authorization: `Bearer ${getToken()}`
@@ -23,7 +23,7 @@ export async function editBook(request, id){
 }
 
 export async function deleteBook(id){
-  await axios.delete(`/api/books/${id}`, {
+  await axios.delete(`/api/books/${id}/`, {
     validateStatus: () => true,
     headers: {
       Authorization: `Bearer ${getToken()}`

@@ -6,6 +6,6 @@ export async function getAllBooks(){
 }
 
 export async function getSingleBook(id){
-  const res = await axios.get(`/api/books/${id}`)
+  const res = await axios.get(`/api/books/${id}/`)
   return res.data
 }

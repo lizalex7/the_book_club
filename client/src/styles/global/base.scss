@@ -46,3 +46,13 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'arvo';
+  font-size: 4em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}

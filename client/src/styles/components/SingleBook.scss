@@ -31,8 +31,18 @@ p {
   }
 }
 
-.back-btn {
+.back-btn, .edit-btn {
   text-decoration: none;
   color: #243CFC;
   font-weight: bold;
+  border: none;
+  a {
+    text-decoration: none;
+    background-color: none;
+  }
+}
+
+form {
+  text-decoration: none;
+  background-color: none;
 }
