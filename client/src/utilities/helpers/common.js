@@ -1,4 +1,4 @@
-const tokenName = 'BOOK_TOKEN_SEI'
+const tokenName = 'BOOKS_TOKEN_SEI'
 
 // # # This function takes a request object and returns form data as a JS object
 export async function formToObj(request){
@@ -34,5 +34,15 @@ export function activeUser(){
     return payload
 }
 
+
 // Validate expiry date (payload.exp) by checking the number is greater than the date right now
+}
+
+export function loggedInUserID(){
+  const userid = activeUser()
+  if (userid) {
+    const id = userid.user_id
+    return id
+  }
+  return null
 }

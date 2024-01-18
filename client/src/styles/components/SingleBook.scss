@@ -31,8 +31,39 @@ p {
   }
 }
 
-.back-btn {
+form {
   text-decoration: none;
+  background-color: none;
+}
+
+.edit-del-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: none;
+  a, form {
+    text-decoration: none;
+    font-family: 'Arvo';
+    color: #243CFC;
+    font-weight: bold;
+  }
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  font-family: 'Arvo';
   color: #243CFC;
   font-weight: bold;
+}
+
+.delete-btn:hover, .update-btn:hover {
+  @include hoverlink;
+}
+
+.full-btn {
+  @include full-line-btn;
+  .full-btn:hover {
+    @include hoverlink;
+  }
 }

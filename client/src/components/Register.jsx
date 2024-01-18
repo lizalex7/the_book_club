@@ -17,15 +17,15 @@ export default function Register() {
 
   return (
     <>
-      <h1 className="library">JOIN THE CLUB</h1>
+      <h1 className="page-header">JOIN THE CLUB</h1>
       <div className="form-container">
       <p><mark>Join the Club to share and review your favourite books</mark></p>
-        <Form method="post" className="registerform" >
-          <input className="registeruser" type="text" name="username" placeholder='Username' /><br />
-          <input className="registeremail" type="email" name="email" placeholder='Email address' /><br />
-          <input className="registerpass" type="password" name="password" placeholder='Password' /><br />
-          <input className="registerpasscon" type="password" name="password_confirmation" placeholder='Confirm password' /><br /><br />
-          <button className="reg-login-btn" type="submit">Sign me up!</button><br /><br />
+        <Form method="post" className="login-form" >
+          <input className="registeruser" type="text" name="username" placeholder='Username' />
+          <input className="registeremail" type="email" name="email" placeholder='Email address' />
+          <input className="registerpass" type="password" name="password" placeholder='Password' />
+          <input className="registerpasscon" type="password" name="password_confirmation" placeholder='Confirm password' />
+          <button className="submit-btn" type="submit">Sign me up!</button><br /><br />
           <p className="register">Already a member? <Link to="/login"><span className='reg-login-link'> Enter here</span></Link></p>
           {res && <p className="danger">{res.data.message}</p>}
         </Form>

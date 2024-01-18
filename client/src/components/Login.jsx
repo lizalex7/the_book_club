@@ -19,12 +19,12 @@ export default function Login(){
 
   return (
     <>
-      <h1 className="library">ENTER</h1>
+      <h1 className="page-header">ENTER THE CLUB</h1>
       <div className='form-container'>
-        <Form className='registerform' method="POST">
+        <Form className='login-form' method="POST">
           <input type="username" name="username" placeholder='Username' /><br/ >
           <input type="password" name="password" placeholder="Password" /><br/ >
-          <button className='reg-login-btn' type="submit">COME ON IN</button><br /><br />
+          <button className='submit-btn' type="submit">COME ON IN</button><br /><br />
           {/* <img className='jtc-image' src={jtclogo} alt='Join The Club' /> */}
           {res && <p className='danger'>{res.data.message}</p>}
           <p className='login'>Not a member? <Link to="/register"><span className='reg-login-link'> Join the club here</span></Link></p>

@@ -21,28 +21,53 @@ main {
   color: #243CFC;
 }
 
-.arvo-regular-italic {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.arvo-bold {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.arvo-bold-italic {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .spinner {
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
+}
+
+h1 {
+  @include flex-center;
+  font-family: 'arvo';
+  font-size: 4em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+// Title text on main pages
+.page-header {
+  @include flex-center;
+  font-family: 'Arvo';
+  font-size: 4em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+// Default button format
+.submit-btn {
+  @include submitbtn;
+}
+
+.submit-btn:hover {
+  @include hoverlink;
+}
+
+// Defult buttons associated with forms
+.form-btn {
+  font-size: 20px;
+  width: 400px;
+  background-color: #E0DED5;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #243CFC;
+  border: none;
+  font-family: 'Arvo';
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+// Error message formatting
+.danger{
+  color: red;
+  width: 50%;
 }

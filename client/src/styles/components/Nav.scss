@@ -27,10 +27,7 @@
     color: #243CFC;
   }
   nav {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    @include flex(column, left, left);
     a, span, .logout {
       color: #243CFC;
       text-decoration: none;

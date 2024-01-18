@@ -8,28 +8,29 @@ import Col from 'react-bootstrap/Col'
 export default function BookIndex() {
   const book = useLoaderData()
   console.log(book)
+
   return (
     <>
-      <h1 className="library">THE LIBRARY</h1>
+      <h1 className='page-header'>THE LIBRARY</h1>
       <Container fluid>
-        <Row className="book-list">
+        <Row className='book-list'>
           { book.map(book => {
-            const { id, title } = book
+            const { id, image } = book
             return (
-              <Col 
-                as={Link}
-                key={id} 
-                xs={6} 
-                md={4} 
-                lg={3}
-                to={`/books/${id}`}
-              >
-                {title}
-              </Col>
-            )
-          })}
+            <Col 
+              as={Link}
+              key={id} 
+              xs={6}
+              md={4}
+              lg={3}
+              style={ { backgroundImage: `url(${image})` } }
+              to={`/books/${id}`}
+            >
+            </Col>
+          )
+        })}
         </Row>
       </Container>
-    </>
+    </> 
   )
 }
