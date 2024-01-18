@@ -16,7 +16,7 @@ export default function BookCreate(){
 
   return (
     <>
-      <h1 className="library">CREATE BOOK</h1>
+      <h1 className="page-header">CREATE BOOK</h1>
       <Form className='form-container' method="POST">
         <label hidden htmlFor="name">Title</label>
         <input type="text" name="title" placeholder='Title' /><br></br>
@@ -27,7 +27,7 @@ export default function BookCreate(){
         <label hidden htmlFor="genre">Genre</label>
         <input type="text" name="genre" placeholder='Genre' /><br></br>
         {res?.statusText && <p className='danger bold mt-4'>{res.statusText}</p>}
-        <button className="reg-login-btn" type="submit">ADD TO LIBRARY</button>
+        <button className="form-btn" type="submit">ADD TO LIBRARY</button>
       </Form>
     </>
   )

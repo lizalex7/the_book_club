@@ -16,7 +16,7 @@ export default function BookEdit(){
 
   return (
     <>
-      <h1 className="library">Edit Book</h1>
+      <h1 className="page-header">Edit Book</h1>
       <Form className='form-container' method="POST">
         <label hidden htmlFor="name">Name</label>
         <input type="text" name="title" placeholder='Title' defaultValue={book.title} /><br></br>
@@ -26,8 +26,8 @@ export default function BookEdit(){
         <textarea name="description" placeholder='Description' defaultValue={book.description}></textarea><br></br>
         <label hidden htmlFor="origin">Genre</label>
         <input type="text" name="genre" placeholder='Genre' defaultValue={book.genre} /><br></br>
-        {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>}
-        <button className="reg-login-btn" type="submit">Update book now</button>
+        {res?.data?.message && <p className='danger'>{res.data.message}</p>}
+        <button className="submit-btn" type="submit">Update book now</button>
       </Form>
     </>
   )

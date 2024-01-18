@@ -1,47 +1,18 @@
-input {
+input, .registeruser, .registeremail, .registerpass {
   background-color: #E0DED5;
   border-radius: 3px;
   border: none;
   color: #243CFC;
   width: 400px;
   font-family: 'Arvo';
-}
-
-.danger{
-  color: red;
-  width: 50%;
-}
-
-// Register and login button formatting and behaviours
-.reg-login-btn {
-  font-size: 20px;
-  width: 400px;
-  background-color: #E0DED5;
-  border-radius: 5px;
-  font-size: 1em;
-  color: #243CFC;
-  border: none;
-  font-family: 'Arvo';
-  margin-top: 1em;
-  font-weight: bold;
+  // padding-top: 5px;
+  // padding-bottom: 5px;
+  // border-top: 10px;
+  margin-bottom: 16px;
 }
 
 .register, .login {
   color: #E0DED5
-}
-
-.reg-login-btn:hover {
-  background-color: #D9FE00; /* Change color on hover */
-  color: #243CFC;
-}
-
-.reg-login-btn:active {
-  transform: translate(1px, 1px); /* Move button 2px down on click */
-}
-
-.reg-login-link:hover {
-  background-color: #D9FE00; /* Change color on hover */
-  color: #243CFC;
 }
 
 p {
@@ -50,18 +21,6 @@ p {
     color: #E0DED5;
     font-weight: bold;
   }
-}
-
-.registerform {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: solid;
-  width: 500px;
-  background-color: #243CFC;
-  border-bottom: 0;
-  padding-top: 25px;
 }
 
 .login-form {
@@ -80,23 +39,31 @@ p {
   font-family: 'Arvo';
 }
 
+// Blue form container box
 .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex(column, center, center);
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 5em;
   background-color: #243CFC;
 }
 
+// Join the club or register here text and hover effect
 .reg-login-link {
   color: #D9FE00;
 }
 
+.reg-login-link:hover {
+  @include hoverlink;
+}
+
+// Description box formatting within form
 textarea {
   width: 400px;
   background-color: #E0DED5;
   font-family: 'Arvo';
   color: #243CFC;
+}
+
+.full-btn {
+  background-color: #E0DED5;
 }

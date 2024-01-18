@@ -3,3 +3,37 @@
   justify-content: center;
   align-items: center;
 }
+
+.mobile-heading, .brand-logo-sm {
+  display: none;
+}
+
+@media (max-width: 880px) and (min-width: 701px) {
+  .brand-logo {
+    display:none;
+  }
+  .brand-logo-sm {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .brand-logo {
+    display:none;
+  }
+
+  .hero {
+    padding-top: 300px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .mobile-heading {
+    font-family: 'Arvo';
+    font-size: 55px;
+    color: #243CFC;
+    display: flex;
+    text-align: center;
+  }
+}

@@ -1,25 +1,23 @@
-.library {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'arvo';
-  font-size: 4em;
-  padding-bottom: .5em;
-  padding-top: .5em;
-}
-
-.book-list {
+.container-fluid {
   a {
-    height: 33.33vw;
+    height: 35vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 80%;
     text-decoration: none;
-    color: blue;
     transition: background-size 0.2s;
-    font-family: 'arvo';
+    font-family: 'Arvo';
     font-size: 20px;
     padding-top: 50px;
     text-align: center;
+    margin: 5px;
+  }
+}
+
+// @media (max-width=)
+
+.book-list{
+  a {
+    background-color: #243CFC;
   }
 }

@@ -1,23 +1,13 @@
 [
 {
   "model": "books.book",
-  "pk": 2,
-  "fields": {
-    "title": "The Impossible Collection of Fashion",
-    "author": "Valerie Steele",
-    "description": "In this limited edition, Ultimate Collection format linen clamshell and handmade oversized book, Valerie Steele flexes her curatorial muscle by showcasing the most iconic dresses of the twentieth century. From Poiret to Pucci, Doucet to Dior, Vionnet to Valentino, Steele selects one hundred dresses that caused a stir either on the runway or entering a room and ultimately inspired new directions in fashion. Steele’s selections include Paul Poiret's figure-liberating 1907 gown, Madame Grès’s sublimely draped goddess creation from 1938, Jean Paul Gaultier's shockingly exaggerated cone-bust corset",
-    "genre": "Fashion",
-    "owner": 1
-  }
-},
-{
-  "model": "books.book",
   "pk": 3,
   "fields": {
     "title": "Travel by Design",
     "author": "The Design Leadership Network",
     "description": "Showcasing travel photographs by more than 150 of America’s top architects and designers, Travel by Design is an inspiring guide to the power of travel to shape and expand our world. Travel by Design reminds us of the beauty and importance of travel, with images of more than 100 locations in 60 countries, from exotic destinations and global cities to adventure travels and all-American escapes. More than 350 photographs take readers on a global journey through cityscapes, ancient civilizations, luxurious resorts, and stunning natural wonders, all seen through the discerning and artistic eyes of",
     "genre": "Travel",
+    "image": "https://eu.assouline.com/cdn/shop/products/FLAT_DLN_Front_1_3000x.jpg?v=1606257847",
     "owner": 1
   }
 },
@@ -29,6 +19,7 @@
     "author": "Aleph Molinari",
     "description": "With a history dating back to the fourteenth century, Mexico City blends indigenous pre-Hispanic roots with colonial architecture and Spanish-baroque influences. This unique fusion, crafted from local materials like cantera and tezontle, inspires artists and architects alike. Iconic structures like Diego Rivera's Anahuacalli Museum and Juan O'Gorman's Cave House proudly embody the city's rich history. Today, Mexico City serves as a vibrant backdrop for renowned filmmakers such as Alejandro González Iñárritu, Alfonso Cuarón, and Michel Franco. Discover a city of wonders, where history and creat",
     "genre": "Travel",
+    "image": "https://eu.assouline.com/cdn/shop/files/MexicoCity-Cover-Flat-FRONT_3000x.jpg?v=1697747198",
     "owner": 1
   }
 },
@@ -40,6 +31,7 @@
     "author": "Horacio Silva",
     "description": "Considered by many as the country’s most dynamic, fastest growing and sexiest city, Miami is more popular than ever before. Yet, it is a city that doesn’t merely change but evolves, never rewriting the past, just adding to its illustrious heritage. And this is the real beauty of Miami. The chic Surf Club and the vibrant Faena Hotel did not replace the emblematic Raleigh of the 1940s nor the Ritz Carlton of the 50s, rather they complement them. Classics like Joe’s Stone Crab continue to serve their signature fare to sell-out crowds each night, as new establishments attract with name chefs. The",
     "genre": "Travel",
+    "image": "https://eu.assouline.com/cdn/shop/products/Miami-A_269bf0e4-e8b4-4332-a520-08fe6c1025b9_3000x.jpg?v=1630473530",
     "owner": 1
   }
 },
@@ -51,6 +43,7 @@
     "author": "Lisa Lovatt-Smith",
     "description": "Surely the most stylish and cool island in the Caribbean, Jamaica is not only the cradle of reggae but also a favorite destination for James Bond. While there is no shortage of luxury villas and white-sand beaches, Jamaica offers something that other destinations lack: a vibrant culture, wholly its own. Overflowing with character, Jamaica has a strong sense of self, which was shaped over the centuries during its fight for freedom and independence.",
     "genre": "Travel",
+    "image": "https://eu.assouline.com/cdn/shop/files/JamaicaVibes-Cover-Flat-FRONT_3000x.jpg?v=1686778600",
     "owner": 1
   }
 },
@@ -62,6 +55,7 @@
     "author": "William Middleton",
     "description": "In the enchanting city of Venice, Casa Codognato, established by Simeone Codognato in 1866, near Piazza San Marco, became renowned for its memento mori designs, while Attilio Codognato introduced ancient intaglios and cameos during a time of significant Etruscan archaeological discoveries. Codognato emerged as one of Europe's most unique jewelers, attracting luminaries like Gabrielle Chanel, Jean Cocteau, and Diana Vreeland. Their jewels became a sensation during Venice's glamorous society ball era, adorning icons like Elizabeth Taylor, Maria Callas, Jacqueline Kennedy, and Lee Radziwill. Atti",
     "genre": "Art",
+    "image": "https://eu.assouline.com/cdn/shop/files/Codognato-Slipcase-Flat-Front_3000x.jpg?v=1698787086",
     "owner": 1
   }
 },
@@ -73,6 +67,7 @@
     "author": "Andrea Fazzari",
     "description": "In Japan, cooking often bears aesthetic value, and the making of sushi is exalted as one of the finest culinary crafts. In line with this ideal of food as art, the Japanese often employ the word shokunin, loosely defined as “artisan”, to refer to highly skilled sushi masters. Connoting excellence and devotion to one’s craft, this title is reserved for those who approach their work with an artistic eye and seemingly spiritual sense of purpose, or ikigai.",
     "genre": "Japanese Cuisine",
+    "image": "https://eu.assouline.com/cdn/shop/products/Sushi-Shokunin-Front-Cover_3000x.jpg?v=1627421850",
     "owner": 1
   }
 },
@@ -84,6 +79,7 @@
     "author": "Anders Christian Madsen",
     "description": "When Virgil Abloh took his first bow for Louis Vuitton in June 2018, fashion changed forever. The newest addition to the Classics Collection, Louis Vuitton: Virgil Abloh honors the designer’s boundary-breaking creativity on and off the runways. With over 250 stunningly iconic images and personal reflections from Abloh’s inner circle, including Nigo, Naomi Campbell, Luka Sabbat, Kendall Jenner and Kid Cudi, the book is the definitive chronicle of a partnership that redefined not only dress codes but their very vocabulary.",
     "genre": "Fashion",
+    "image": "https://eu.assouline.com/cdn/shop/products/Virgil_Classic_V2_A_3000x.jpg?v=1662478272",
     "owner": 1
   }
 },
@@ -95,7 +91,20 @@
     "author": "Julie Belcove",
     "description": "In the 1950s, a young man from Pittsburgh named Andy Warhol was earning a comfortable living as a commercial illustrator in New York City. But his ambitions went well beyond that; soon he was painting Coca-Cola bottles and filling a gallery with paintings of Campbell’s Soup cans. He certainly wasn’t the first to make a Pop work, but Warhol soon became a brand name himself, synonymous with the new art form that embodied everything youthful, subversive, bright and fresh.",
     "genre": "Art",
+    "image": "https://eu.assouline.com/cdn/shop/products/PopArt-Cover-Flat-FRONT_3000x.jpg?v=1660776783",
     "owner": 1
+  }
+},
+{
+  "model": "books.book",
+  "pk": 24,
+  "fields": {
+    "title": "The Impossible Collection of Art (2nd Edition)",
+    "author": "Philippe Ségalot",
+    "description": "Modern art is the new intellectual currency, drawing the attention of media moguls, hedge-fund managers, and Hollywood darlings, granting them entry into an exclusive global community. Renowned art dealers Philippe Ségalot and Franck Giraud have curated The Impossible Collection of Art, an unparalleled modern art collection where anything is possible. These 100 extraordinary artworks, introduced by Joachim Pissarro, offer a unique perspective on 20th-century artistic achievements, whether hidden in a museum's vault or up for auction. In the 2nd edition, Ségalot and Giraud have updated with eleven new works, inspiring endless discussions and inviting art enthusiasts to imagine their own dream Impossible Collection.",
+    "genre": "Art",
+    "image": "https://eu.assouline.com/cdn/shop/files/IC-ART_ClamshellFlatFRONT_3000x.jpg?v=1698787116",
+    "owner": 10
   }
 }
 ]

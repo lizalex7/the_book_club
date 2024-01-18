@@ -1,6 +1,5 @@
 
 import { useLoaderData, Link, Form } from 'react-router-dom'
-import axios from 'axios'
 
 // Bootstrap Components
 import Container from 'react-bootstrap/Container'
@@ -27,16 +26,20 @@ export default function SingleBook(){
             <p><span className='bold'>Genre:</span>  {genre}</p>
             <p><span className='bold'>Added by:</span>  {username}</p>
           </div>
-          {loggedInUserID() === book.owner.id &&
-            <div>
-              <Link to={`/books/${id}/edit/`}>UPDATE BOOK</Link>
+        </Col>
+      </Row>
+      <Row>
+      {loggedInUserID() === book.owner.id &&
+            <div className='edit-del-btns'>
+              <Link className='submit-btn' to={`/books/${id}/edit/`}>UPDATE BOOK</Link>
               <Form method='POST'>
-                <button className='delete-btn'>DELETE BOOK</button>
+                <button className='submit-btn'>DELETE BOOK</button>
               </Form>
             </div>
           }
-          <Link className='back-btn' to="/books/">Back</Link>
-        </Col>
+      </Row>
+      <Row>
+        <Link className='full-btn' to="/books/">Go back to the Library</Link>
       </Row>
     </Container>
   )

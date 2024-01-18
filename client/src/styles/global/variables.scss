@@ -2,3 +2,51 @@
 $backgroud_colour: #E0DED5;
 $main_text_colour: #243CFC;
 $yellow: #D9FE00;
+
+// Hover effect
+@mixin hoverlink{
+  background-color: #D9FE00;
+  color: #243CFC;
+}
+
+// Flex any direction
+@mixin flex($direction, $align, $justify){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// Flex center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin full-line-btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #243CFC;
+  font-weight: bold;
+  border: none;
+  a {
+    text-decoration: none;
+    background-color: none;
+    font-family: 'Arvo';
+  }
+}
+
+@mixin submitbtn {
+  font-size: 20px;
+  width: 400px;
+  background-color: #E0DED5;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #243CFC;
+  border: none;
+  font-family: 'Arvo';
+  margin-top: 30px;
+  font-weight: bold;
+}

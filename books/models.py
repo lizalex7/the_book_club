@@ -5,6 +5,7 @@ class Book(models.Model):
   author = models.CharField(max_length=100)
   description = models.CharField(max_length=1000)
   genre = models.CharField(max_length=100)
+  image = models.URLField(max_length=200, default='somestring')
   owner = models.ForeignKey(
     to='users.User',
     on_delete=models.CASCADE,
