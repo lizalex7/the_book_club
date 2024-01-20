@@ -25,8 +25,7 @@ export default function Login(){
           <input type="username" name="username" placeholder='Username' /><br/ >
           <input type="password" name="password" placeholder="Password" /><br/ >
           <button className='submit-btn' type="submit">COME ON IN</button><br /><br />
-          {/* <img className='jtc-image' src={jtclogo} alt='Join The Club' /> */}
-          {res && <p className='danger'>{res.data.message}</p>}
+          {res && <p className='danger'>{res.data.detail}</p>}
           <p className='login'>Not a member? <Link to="/register"><span className='reg-login-link'> Join the club here</span></Link></p>
         </Form>
       </div>
