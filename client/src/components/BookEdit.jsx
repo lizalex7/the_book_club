@@ -26,7 +26,9 @@ export default function BookEdit(){
         <textarea name="description" placeholder='Description' defaultValue={book.description}></textarea><br></br>
         <label hidden htmlFor="origin">Genre</label>
         <input type="text" name="genre" placeholder='Genre' defaultValue={book.genre} /><br></br>
-        {res?.data?.message && <p className='danger'>{res.data.message}</p>}
+        <label hidden htmlFor="image">Image</label>
+        <input type="text" name="image" placeholder='Image' /><br></br>
+        {res?.statusText && <p className='danger'>{res.data.image} {res.data.title} {res.data.author} {res.data.description} {res.data.genre}</p>}
         <button className="submit-btn" type="submit">Update book now</button>
       </Form>
     </>

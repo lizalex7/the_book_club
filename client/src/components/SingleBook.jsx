@@ -39,7 +39,7 @@ export default function SingleBook(){
           }
       </Row>
       <Row>
-        <Link className='full-btn' to="/books/">Go back to the Library</Link>
+        <Link className='back-btn' to="/books/">Go back to the Library</Link>
       </Row>
     </Container>
   )

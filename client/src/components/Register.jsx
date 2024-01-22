@@ -27,7 +27,7 @@ export default function Register() {
           <input className="registerpasscon" type="password" name="password_confirmation" placeholder='Confirm password' />
           <button className="submit-btn" type="submit">Sign me up!</button><br /><br />
           <p className="register">Already a member? <Link to="/login"><span className='reg-login-link'> Enter here</span></Link></p>
-          {res && <p className="danger">{res.data.message}</p>}
+          {res && <p className="danger">{res.data.username}{res.data.non_field_errors}</p>}
         </Form>
       </div>
     </>

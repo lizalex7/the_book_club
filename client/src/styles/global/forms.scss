@@ -1,4 +1,4 @@
-input, .registeruser, .registeremail, .registerpass {
+input, .registeruser, .registeremail, .registerpass, .registerpasscon {
   background-color: #E0DED5;
   border-radius: 3px;
   border: none;
@@ -45,6 +45,7 @@ p {
   padding-top: 2em;
   padding-bottom: 5em;
   background-color: #243CFC;
+  height: 650px;
 }
 
 // Join the club or register here text and hover effect
@@ -64,6 +65,42 @@ textarea {
   color: #243CFC;
 }
 
-.full-btn {
+.back-btn {
   background-color: #E0DED5;
+  color: #243CFC;
+  font-weight: bold;
+} 
+
+.back-btn:hover {
+  padding-top: 0px;
+  height: 27px;
+  a {
+    @include hoverlink;
+  }
+}
+
+div.edit-del-btns{
+  justify-content: center;
+}
+
+.edit-del-btns {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  .submit-btn {
+    color:#243CFC;
+    padding-top: 0px;
+  }
+  a {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 1.3em;
+    height: 50px;
+  }
+}
+
+button.submit-btn {
+  margin-top: 0px;
+  font-size: 1.3em;
+  height: 50px;
 }

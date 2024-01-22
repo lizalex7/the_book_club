@@ -28,7 +28,7 @@ export default function BookCreate(){
         <input type="text" name="genre" placeholder='Genre' /><br></br>
         <label hidden htmlFor="image">Image</label>
         <input type="text" name="image" placeholder='Image' /><br></br>
-        {res?.statusText && <p className='danger bold mt-4'>{res.statusText}</p>}
+        {res?.statusText && <p className='danger'>{res.data.image} {res.data.title} {res.data.author} {res.data.description} {res.data.genre}</p>}
         <button className="form-btn" type="submit">ADD TO LIBRARY</button>
       </Form>
     </>
