@@ -67,40 +67,4 @@ textarea {
 
 .back-btn {
   background-color: #E0DED5;
-  color: #243CFC;
-  font-weight: bold;
-} 
-
-.back-btn:hover {
-  padding-top: 0px;
-  height: 27px;
-  a {
-    @include hoverlink;
-  }
-}
-
-div.edit-del-btns{
-  justify-content: center;
-}
-
-.edit-del-btns {
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  .submit-btn {
-    color:#243CFC;
-    padding-top: 0px;
-  }
-  a {
-    margin-top: 0px;
-    padding-top: 0px;
-    font-size: 1.3em;
-    height: 50px;
-  }
-}
-
-button.submit-btn {
-  margin-top: 0px;
-  font-size: 1.3em;
-  height: 50px;
 }

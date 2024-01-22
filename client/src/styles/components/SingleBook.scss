@@ -1,29 +1,11 @@
 .single-book-detail {
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.book-title {
-    font-family: 'Arvo';
-    color: red;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    
-    mark {
-      background-color: #D9FE00;
-      color: #243CFC;
-    }
+  padding: 5px 50px 5px 50px;
 }
 
 p {
   text-align: left;
   font-size: 20px;
+  padding-top: 5px;
 
   span {
     font-weight: bold;
@@ -39,31 +21,35 @@ form {
 .edit-del-btns {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  border: none;
-  a, form {
+  justify-content: space-around;
+  align-items: top;
+  a.submit-btn {
     text-decoration: none;
-    font-family: 'Arvo';
+  }
+  .submit-btn {
+    background: transparent;
     color: #243CFC;
+    border: none;
+    font-family: 'Arvo';
     font-weight: bold;
   }
-}
-
-.delete-btn {
-  border: none;
-  background: transparent;
-  font-family: 'Arvo';
-  color: #243CFC;
-  font-weight: bold;
-}
-
-.delete-btn:hover, .update-btn:hover {
-  @include hoverlink;
-}
-
-.full-btn {
-  @include full-line-btn;
-  .full-btn:hover {
-    @include hoverlink;
+  .submit-btn:hover {
+    @include hoverlink
   }
 }
+
+a.full-btn {
+    background: transparent;
+    color: #243CFC;
+    font-family: 'Arvo';
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  a.full-btn:hover {
+    @include hoverlink
+  }

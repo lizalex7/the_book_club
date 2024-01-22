@@ -43,15 +43,6 @@ h1 {
   padding-top: .5em;
 }
 
-// Default button format
-.submit-btn {
-  @include submitbtn;
-}
-
-.submit-btn:hover {
-  @include hoverlink;
-}
-
 // Defult buttons associated with forms
 .form-btn {
   font-size: 20px;
@@ -73,4 +64,16 @@ h1 {
   text-align: center;
   font-family: 'Arvo';
   font-weight: bold;
+}
+
+.book-title {
+  font-family: 'Arvo';
+  color: red;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  
+  mark {
+    background-color: #D9FE00;
+    color: #243CFC;
+  }
 }
